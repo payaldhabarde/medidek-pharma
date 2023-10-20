@@ -1,0 +1,6 @@
+
+.image-scroll{
+    display: flex;
+    width: calc(100% * 1);
+    animation: scroll 15s linear infinite;
+}

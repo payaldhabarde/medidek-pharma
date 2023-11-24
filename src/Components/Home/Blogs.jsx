@@ -66,7 +66,7 @@ const Blogs = () => {
 
 
     <div className='flex ml-4 relative'>
-        <img src='https://img.freepik.com/free-photo/biotechnology-specialist-laboratory-conducting-experiments_23-2150468692.jpg?w=1380&t=st=1697531083~exp=1697531683~hmac=9ba499217d1506b647fb3ac3a891ad250abb8a3b999b2058d2a767afaeca8989' className='w-[560px] h-[480px] opacity-70 rounded-md'/>
+        <img src='https://images.unsplash.com/photo-1639772823849-6efbd173043c?auto=format&fit=crop&q=80&w=2574&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className='w-[570px] h-[530px] opacity-95 rounded'/>
     
     <div className='flex absolute'>
     <div className='w-20 h-20 bg-[#1F51C6] text-white rounded-r-lg text-center  hover:bg-gray-600 '>
@@ -75,9 +75,9 @@ const Blogs = () => {
     </div> 
 
     <div className='w-96 h-20 pt-96 '>
-        <h1 className='mt-3 text-xl font-bold text-[#0e162a]'>Meatloaf Kielbasa Meatball T-bone  Pork</h1>
+        <h1 className='mt-3 text-xl font-bold text-[#1a1848]'>Meatloaf Kielbasa Meatball T-bone  Pork</h1>
         <div className='flex justify-between mt-1 text-white font-extrabold text-sm'>
-            <div className='flex'><IoPersonSharp/> &nbsp;&nbsp;By Smith john </div><div className='flex mr-2'> <BiSolidMessageRounded/>&nbsp;&nbsp;87</div></div>
+            <div className='flex text-blue-800'><IoPersonSharp/> &nbsp;&nbsp;By Smith john </div><div className='flex mr-2 text-blue-800'> <BiSolidMessageRounded/>&nbsp;&nbsp;87</div></div>
     </div>
     </div>
     </div>

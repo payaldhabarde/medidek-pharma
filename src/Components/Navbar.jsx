@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
 
-     <div className='flex relative justify-between bg-[#EC5C42] opacity-95 text-white gap-5 '>
+     <div className='md:flex relative justify-between bg-[#EC5C42] opacity-95 text-white gap-5 '>
         <div className='flex justify-between items-center p-3 ml-9  space-x-4'>
         <BsStopwatch/>
     <span className='font-thin text-sm'>Opening Hours: Mon - Sat 8.00 - 18.00</span>

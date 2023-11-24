@@ -1,10 +1,9 @@
 import React from 'react'
 import { BsPerson,BsLightbulb } from "react-icons/bs";
 import { FaRegPaperPlane } from "react-icons/fa";
-
-import Products from './Products';
-import AboutUs from './AboutUs';
+import AboutUsHome from './AboutUsHome';
 import DevelopmentPipline from './DevelopmentPipline';
+import Products from './Products';
 const OurTeam = () => {
   return (
     <>
@@ -14,7 +13,7 @@ const OurTeam = () => {
 <p className='text-md text-gray-400 mt-4 mb-4'>We are a biopharmaceuticals company focused on the discovery, development and commercialization of<br/> innovative therapies intended to improve outcomes in patients sufferings.</p>
 </div>
 
-<div className=' flex flex-row items-center p-4'>
+<div className=' flex flex-row items-center p-4 '>
 
 
 <div className='border border-solid border-gray-300 ml-5 w-80 h-96 rounded text-center hover:rounded-md '>
@@ -42,13 +41,7 @@ const OurTeam = () => {
 </div>
 </div>
    
-   <div className='mt-32'></div>
-   <Products/>
-
-   <div className='mb-32'></div>
-   <AboutUs/>
-   <div className='mb-32'></div>
-   <DevelopmentPipline/>
+   
    <div className='mb-32'></div>
     </>
 

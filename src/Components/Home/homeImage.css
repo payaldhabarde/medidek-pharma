@@ -1,6 +1,41 @@
 
-.image-scroll{
+.wrapper{
+    animation: slide 200s infinite;
     display: flex;
-    width: calc(100% * 1);
-    animation: scroll 15s linear infinite;
 }
+
+@keyframes slide{
+    0%{
+      background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+    }
+    25%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+    
+    }
+    30%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+    50%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+   55%{
+    background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+    75%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+    80%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+    100%{
+        background-image: url("https://www.dialexa.com/wp-content/uploads/2023/06/frontdoor_tile_color-768x512.png");
+   
+    }
+    
+}
+

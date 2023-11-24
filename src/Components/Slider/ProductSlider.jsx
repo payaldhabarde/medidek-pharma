@@ -1,8 +1,6 @@
 import React from 'react'
 import './productslider2.css'
 
-
-
 const ProductSlider = () => {
   return (
     <>

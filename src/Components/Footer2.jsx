@@ -16,14 +16,14 @@ const Footer2 = () => {
             <div className='flex gap-4 ml-10 mt-5 text-2xl text-white '>
         <BiLogoFacebook/>
         <BiLogoTwitter/>
-        <BiLogoGoogle/>
-        <BiLogoLinkedin/>
+       <a href='https://www.bing.com/search?q=medidek+facebook&cvid=eb4d2541c2774889b73b841a768149d0&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhBFGEDSAQg0ODg3ajBqNKgCALACAA&FORM=ANAB01&PC=U531'> <BiLogoGoogle/></a>
+      <a href='https://www.bing.com/search?q=medidek+linkdin&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=medidek+linkdin&sc=9-15&sk=&cvid=55504FC972AB4B2799946EEE92E5CE68&ghsh=0&ghacc=0&ghpl='><BiLogoLinkedin/></a>  
         <BiLogoYoutube/>
-        <BiLogoInstagram/>
+        <a href='https://www.instagram.com/medidekofficial/'><BiLogoInstagram/></a>
         </div></div>
             <ul class="flex flex-wrap items-center text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                    <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
                 </li>
                 <li>
                     <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>

@@ -79,7 +79,7 @@ const RegisterUser = () => {
     </div>
     <div className='flex justify-between'>
     <button  onClick={apicall} type="submit" id='submit' class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-7 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-<p>Already have an account?<button onClick={()=>loginNavigate("/signup")} className='text-blue-800 py-2 px-4 font-semibold rounded-md'>Login here</button> </p>
+<p>Already have an account?<button onClick={()=>loginNavigate("/signup")} className='text-blue-800 py-2 px-4  font-semibold rounded-md'>Login here</button> </p>
 </div>
 </form>
        

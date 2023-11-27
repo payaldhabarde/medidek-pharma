@@ -11,7 +11,7 @@ const ExpertAdvice = () => {
 
   useEffect(()=>{
     getproducts();
-  })
+  },[])
 
 
   return (

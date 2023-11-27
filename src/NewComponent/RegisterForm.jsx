@@ -92,7 +92,7 @@ const RegisterForm = () => {
     <label onClick={()=>registerNavigate("/reset")} for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300  ">Forgot Password?</label></span>
 </div>
 
-<p className='text-sm font-semibold mt-2'> Don't have an account? <span onClick={()=>registerNavigate("/regist")} className=' cursor-pointer text-orange-800'>Register here</span></p>
+<p className='text-sm font-semibold mt-2'> Don't have an account? <span onClick={()=>registerNavigate("/regist")} className=' cursor-pointer text-orange-800'><span onClick='scroll-mt-px'>Register here</span></span></p>
   </form>
     </div>
   )

@@ -40,7 +40,7 @@ const PharmaFooter = () => {
   return (
     <>
 
-    <div className='bg-blue-800 text-white cursor-pointer'>
+    <div className='bg-[#1F51C6] text-white cursor-pointer'>
      <div className=' mt-20 ml-4 w-full  flex justify-between '>
         
         <div className='text-sm space-y-3 ml-11 mt-5'>

@@ -49,6 +49,8 @@ import HomeSlider from './Components/Slider/HomeSlider'
 import FixedNav from './Components/Navbar/FixedNav'
 import AboutPharma from './NewComponent/AboutPharma'
 import AllComponents from './NewComponent/AllComponents'
+import ExpertAdvice from './NewComponent/ExpertAdvice'
+
 
 import EnquiryFrm from './NewComponent/EnquiryFrm'
 import FAQ from './NewComponent/FAQ'
@@ -85,7 +87,7 @@ const App = () => {
 <Route path='/regist' element={<RegisterUser/>}/>
 <Route path='/category' element={<ShopByCategory/>}/>
 <Route path='/practice1' element={<Practice/>}/>
-<Route path='/all' element={<AllComponents/>}/>
+<Route path='/all' element={<ExpertAdvice/>}/>
 <Route path='concerns' element={<HealthConcerns/>}/>
 <Route path='aboutPharma' element={<AboutPharma/>}/>
 <Route path='/frm' element={<EnquiryFrm/>}/>

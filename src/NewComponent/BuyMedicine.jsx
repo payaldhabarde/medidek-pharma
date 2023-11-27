@@ -18,7 +18,7 @@ const BuyMedicine = () => {
   const apicall =async(e) =>{
     e.preventDefault()
     const{email}=inputValue;
-    const respc =await axios.post("http://localhost:5000/newsletter",{email})
+    const respc =await axios.post("https://payalweb-medidekpharma.onrender.com/newsletter",{email})
     console.log(respc);
   if(respc.status === 200){
     toast(respc.data.msg);
@@ -35,7 +35,7 @@ const BuyMedicine = () => {
        </div>
 
        <div >
-    <img src='https://media.ohbulan.com/wp-content/uploads/2018/01/medicine-gif-11.gif' className='rounded-full h-64 w-64'/>
+    <img src='https://www.indium.com/blog/media/images/0608/medical.jpg' className='rounded-full h-64 w-64 mt-5'/>
 </div>
         <div className='space-y-3 relative inset-0'>
             <h1 className='text-2xl font-semibold'>Buy Medicines<br/> Faster with one tap <br/>away..</h1>

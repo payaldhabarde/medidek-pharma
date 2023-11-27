@@ -33,7 +33,10 @@ const Navbar2 = () => {
 
             </div>
         </div>
-
+        <Testimoniols/>
+    <Products/>
+   <AboutUsHome/>
+   <DevelopmentPipline/>
         </div>
  
     </>

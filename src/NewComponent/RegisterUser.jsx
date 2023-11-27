@@ -29,7 +29,7 @@ const RegisterUser = () => {
             return ;
         }
         e.preventDefault()
-        const resp = await axios.post("http://localhost:5000/register",inputvalue)
+        const resp = await axios.post("https://payalweb-medidekpharma.onrender.com/register",inputvalue)
         console.log(resp);
         if(resp.status ===200){
             toast(resp.data.msg)
@@ -42,7 +42,7 @@ const RegisterUser = () => {
 
   return (
     <>
-     <div className='w-[900px] h-full'>
+     <div className='w-[900px] h-full ml-64'>
 <form >
     <div class="grid gap-6 mb-6 md:grid-cols-1 mt-9 ">
         <div>

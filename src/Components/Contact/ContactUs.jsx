@@ -4,7 +4,35 @@ import { FaPeopleLine } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import { FcSalesPerformance } from "react-icons/fc";
 import { FaAdversal } from "react-icons/fa";
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 const ContactUs = () => {
+
+  const buyMedicine = useNavigate()
+  const subscribe= useNavigate();
+
+  const[inputValue, setValue]=useState({
+    email:"",
+  })
+
+  const getdata= (e) =>{
+    const{id, value} =e.target;
+    console.log(id, value)
+    setValue({...inputValue, [id]:value})
+  }
+
+  const apicall =async(e) =>{
+    e.preventDefault()
+    const{email}=inputValue;
+    const respc =await axios.post("http://localhost:5000/newsletter",{email})
+    console.log(respc);
+  if(respc.status === 200){
+    toast(respc.data.msg);
+    subscribe('/')
+  }else{
+    toast('something went wrong!')
+  }
+}
   return (
     <>
       <div className='ml-14 text-center mb-12 '>
@@ -67,26 +95,24 @@ Chat with a real, live human or self-serve using our Help Center.</p>
      </div>
       </div>
 
-      <div className='flex w-full ml-20 mt-12 justify-evenly  ' id='contactus'>
+      <div className='flex w-full ml-20 mt-12 justify-evenly' id='contactus'>
         <div className='mt-3'>
-        <img src='https://cdn.dribbble.com/users/1602563/screenshots/8869646/qw.gif' className='cover'/>
+        <img src='https://cdn.dribbble.com/users/1602563/screenshots/8869646/qw.gif' className='w-96 h-64'/>
         </div>
 
-     <div>
-  
-     <form className='mt-12 '>
-        <input type='text' name='name' placeholder='Enter your Full Name' className='px-28 py-3 mb-6 border-2 border-blue-700 rounded text-center'/>
-        <input type='email' name='email' placeholder='Enter your E-mail' className='px-28 py-3 mb-6 border-2 border-blue-700 rounded text-center' />
+     <div className='mr-32'>
+  <h1 className='text-sm font-semibold mt-12  text-blue-800'><i>THANK YOU!</i></h1>
 
-        <input type='number' name='number' placeholder='Phone Number' className='px-28 py-3  border-2 border-blue-700 mb-6 rounded text-center'/>
-        <input type='text' name='message' placeholder='What can we do for you ?' className='px-28 py-14  border-2 border-blue-700 mb-6 rounded text-center'/>
-        <button className='py-3 px-14 text-white font-semibold bg-blue-800 rounded items-center ml-32'>Submit</button>
-     </form>
+<p className='text-xs text-gray-500 opacity-80 mt-3'>We have added you to our mailing list.<br/> You will be among the first <r/>people to get all of our special<br/> offers, newest updates, and announcements.<br/> We will do our best not to bore <br/>you with marketing emails!</p>
+     <div class="flex items-center w-64 mt-12 mr-16 border-b border-teal-500 py-2">
+    <input onChange={(e)=>getdata(e)} class="appearance-none bg-transparent border-none w-full text-blue-800 mr-3 py-1 px-2 leading-tight focus:outline-none" id='email' type="email" placeholder="Email Address" aria-label="Full name"/>
+    <button onClick={apicall} className='text-sm text-blue-800 font-semibold'>SUBSCRIBE</button>
+    </div>
 
 </div>
       </div>
 
-      <div className='flex justify-center mt-24 mb-24 gap-5'>
+      <div className='flex justify-center mt-24 mb-24 gap-5 ml-2'>
 
         <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.378340065861!2d79.08654737409158!3d21.177124280509638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c130e31378b3%3A0x17c624e5d39fc9e3!2sMedidek%20Healthcare%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1699351535983!5m2!1sen!2sin" width="550" height="450" style={{border:0, borderRadius:10}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -104,7 +130,7 @@ Chat with a real, live human or self-serve using our Help Center.</p>
        
        </div>
 
-       <button className='py-3 px-14 bg-white border border-2 border-gray-300 hover:bg-blue-700 hover:text-white hover:border-gray-300 mt-11 font-semibold text-blue-800 rounded ml-2'>Enquire Now</button>
+       <button onClick={()=>subscribe("/frm")} className='py-3 px-14 bg-white border border-2 border-gray-300 hover:bg-blue-700 hover:text-white hover:border-gray-300 mt-11 font-semibold text-blue-800 rounded ml-2'>Enquire Now</button>
 
 
     

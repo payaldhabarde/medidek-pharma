@@ -31,7 +31,7 @@ const RegisterForm = () => {
       return;
     }
     e.preventDefault()
-    const responce =await axios.post("http://localhost:5000/login",inputvalue)
+    const responce =await axios.post("https://payalweb-medidekpharma.onrender.com/login",inputvalue)
     console.log(responce);
     if(responce.status === 200 ){
      toast(responce.data.msg) ;
@@ -45,13 +45,12 @@ const RegisterForm = () => {
 
         
 <form
-    class="bg-white shadow-lg mt-12 ml-24 rounded-md p-5 md:p-10 flex flex-col w-11/12 max-w-lg"
+    class="bg-white shadow-lg mt-12 ml-80 rounded-md p-5 md:p-10 flex flex-col w-11/12 max-w-lg"
   >
     <span className='flex ml-2 gap-3 '>
     <h1 className='mt-4 text-lg'>Sign in with</h1>
       <span className='flex gap-3 mt-5'>
 <GrFacebookOption className='text-blue-800 w-7 h-7  '/>
-<PiTwitterLogoFill className='text-blue-800 w-7 h-7  '/>
 <TiSocialGooglePlus className='text-blue-800 w-7 h-7  '/>
 <FaLinkedinIn className='text-blue-800 w-7 h-7  '/>
 
@@ -93,7 +92,7 @@ const RegisterForm = () => {
     <label onClick={()=>registerNavigate("/reset")} for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300  ">Forgot Password?</label></span>
 </div>
 
-<p className='text-sm font-semibold mt-2'> Don't have an account? <span onClick={()=>registerNavigate("/enquiryform")} className='text-orange-800'>Register here</span></p>
+<p className='text-sm font-semibold mt-2'> Don't have an account? <span onClick={()=>registerNavigate("/regist")} className=' cursor-pointer text-orange-800'>Register here</span></p>
   </form>
     </div>
   )

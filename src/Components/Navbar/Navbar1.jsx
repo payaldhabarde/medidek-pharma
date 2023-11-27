@@ -1,18 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { BsStopwatch } from "react-icons/bs";
-import { BiLogoFacebook, BiLogoTwitter,BiLogoGoogle,BiLogoLinkedin,BiLogoYoutube } from "react-icons/bi";
-import Navbar2 from './Navbar2';
-import Navbar3 from './Navbar3';
-import Home2 from '../Home/Home2';
-import OurTeam from '../Home/OurTeam';
-import Blogs from '../Home/Blogs';
-import Testimoniols from '../Home/Testimoniols';
-import Contact1 from '../Contact/Contact1';
-import Products from '../Home/Products';
-import AboutUsHome from '../Home/AboutUsHome';
-import DevelopmentPipline from '../Home/DevelopmentPipline';
+import { PiInstagramLogoBold } from "react-icons/pi";
 
-import ProductHome from "../../NewComponent/ProductHome"
+
+import { BiLogoFacebook, BiLogoTwitter,BiLogoGoogle,BiLogoLinkedin,BiLogoYoutube } from "react-icons/bi";
+
 const Navbar1 = () => {
 const[register,setRegister]=useState(false);
   return (
@@ -24,34 +16,19 @@ const[register,setRegister]=useState(false);
     <span className='font-thin text-sm '>Opening Hours: Mon - Sat 8.00 - 18.00</span>
     </div> 
     
-    <div className='flex justify-center items-center mr-9 space-x-4'>
+    <div className='flex justify-center items-center mr-12 space-x-4'>
        
         <p className='font-thin sm:font-thin text-sm '>Follow us:</p>
         <div className='flex gap-4 items-center'>
-        <BiLogoFacebook/>
-        <BiLogoTwitter/>
-        <a href='https://www.medidek.in/'><BiLogoGoogle/></a>
-       <a href='https://www.linkedin.com/company/medidek/posts/?feedView=all'><BiLogoLinkedin/></a>
-        <BiLogoYoutube/>
+       <a href='https://www.facebook.com/profile.php?id=100094316681517'><BiLogoFacebook/></a>
+        <a href='https://www.bing.com/search?q=medidek&qs=n&form=QBRE&sp=-1&lq=0&pq=medidek&sc=11-7&sk=&cvid=0FE97BC133114E39B00A871B546F31D9&ghsh=0&ghacc=0&ghpl='><BiLogoGoogle/></a>
+       <a href='https://www.linkedin.com/company/medidek-pharmaceuticals/'><BiLogoLinkedin/></a>
+       <a href='https://www.instagram.com/medidekofficial/'><PiInstagramLogoBold  /></a>
+       <a to='https://www.youtube.com/@MedidekSocial'><BiLogoYoutube/></a>
         </div>
    </div>    
     </div> 
-<ProductHome/>
-
-    <Navbar3 />
-    <Home2/>
-    {!register && <OurTeam/>}
-    {!register &&<Blogs/>}
-    {!register &&<Testimoniols/>}
-    <Contact1/>
-    <div className='mt-32'></div>
-    <Products/>
-
-   <div className='mb-2'></div>
-   
-   <AboutUsHome/>
-   <div className='mb-32'></div>
-   <DevelopmentPipline/>
+    
    
     </>
   )

@@ -45,6 +45,15 @@ import Sidebar from './NewComponent/DASHBOARD/Sidebar'
 import AllDashComponent from './NewComponent/DASHBOARD/AllDashComponent'
 
 import DashboardTest from './NewComponent/DASHBOARD/DashboardTest'
+import HomeSlider from './Components/Slider/HomeSlider'
+import FixedNav from './Components/Navbar/FixedNav'
+import AboutPharma from './NewComponent/AboutPharma'
+import AllComponents from './NewComponent/AllComponents'
+
+import EnquiryFrm from './NewComponent/EnquiryFrm'
+import FAQ from './NewComponent/FAQ'
+import HealthConcerns from './NewComponent/HealthConcerns'
+HealthConcerns
 const App = () => {
   const [register,setRegister] = useState(false)
 
@@ -54,7 +63,7 @@ const App = () => {
 
 <Routes>
   <Route path='/a' element={<ProductHome/>}/>
-<Route path='/' element={<Navbar1/>}/>
+<Route path='/' element={<FixedNav/>}/>
 <Route path='/newproducts' element={<NewProducts/>}/>
 <Route path='/register' element={<Register/>}/>
 <Route path='/contactus' element={<ContactUs/>}/>
@@ -76,10 +85,17 @@ const App = () => {
 <Route path='/regist' element={<RegisterUser/>}/>
 <Route path='/category' element={<ShopByCategory/>}/>
 <Route path='/practice1' element={<Practice/>}/>
+<Route path='/all' element={<AllComponents/>}/>
+<Route path='concerns' element={<HealthConcerns/>}/>
+<Route path='aboutPharma' element={<AboutPharma/>}/>
+<Route path='/frm' element={<EnquiryFrm/>}/>
+<Route path='faq' element={<FAQ/>}/>
 </Routes>
 {/* <EnquiryForm/> */}
-<AllDashComponent/>
-<DashboardTest/>
+
+<AboutPharma/>
+<PharmaFooter/>
+
     </div>
 
 

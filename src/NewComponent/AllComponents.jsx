@@ -21,8 +21,7 @@ const AllComponents = () => {
         <RecommendedProducts/>
         <BuyMedicine/>
         <ExpertAdvice/>
-        <AboutPharma/>
-        <PharmaFooter/>
+      
     </>
   )
 }

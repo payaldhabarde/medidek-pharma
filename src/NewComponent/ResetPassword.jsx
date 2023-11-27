@@ -19,7 +19,7 @@ const reset = useNavigate()
   const apicall = async(e)=>{
     e.preventDefault()
     const {email,password} =inputValue;
-    const responce=await axios.post("http://localhost:5000/forgotpassword",{email,password})
+    const responce=await axios.post("https://payalweb-medidekpharma.onrender.com/forgotpassword",{email,password})
   console.log(responce);
 
   if(responce.status === 200){

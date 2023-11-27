@@ -16,7 +16,7 @@ const AllComponents = () => {
     <>
         <NavbarHome/>
         <Delivery/>
-       <HealthConcerns/>
+        <HealthConcerns/>
         <Offers/>
         <RecommendedProducts/>
         <BuyMedicine/>

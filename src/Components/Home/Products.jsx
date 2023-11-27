@@ -10,13 +10,13 @@ const Products = ({open}) => {
       <div className=' flex justify-block mt-5 h-screen cover gap-5 w-full justify-between  items-center space-evenly z-[95]'>
      <div className='ml-16 mb-[12rem]'>
          <h1 className='text-white text-4xl font-semibold'>See Our Products </h1><br/><br/>
- <h2 className='text-md text-[#1F51C6] '>We have several product candidates in development that we believe<br/> have been significantly de-risked.</h2><br/>
+ <h2 className='text-md text-white '>We have several product candidates in development that we believe<br/> have been significantly de-risked.</h2><br/>
  
  <p className='text-sm  text-gray-200'>been significantly de-risked. At vero eos et accusam justo duo dolores etea <br/>rebuitet clita kasd gubergren nosea takimata sanctus est lorem ipsum dolor<br/> consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut<br/> labore magna aliquyam sedam voluptua at vero eos et accusam et justo duo dolores.</p><br/>
  
  
   
- <button type="button" class="text-white hover:text-[#1F51C6] border-2 border-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-3 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-300 dark:focus:ring-blue-800 font-semibold" onClick={()=>navigate("/all")} >See All Products</button>
+ <a href="/all" target='_blank' ><button type="button" class="text-white hover:text-[#1F51C6] border-2 border-white hover:bg-white focus:ring-4 focus:outline-none cursor-pointer focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-3 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-300 dark:focus:ring-blue-800 font-semibold" onClick='scroll-mt-px' >See All Products</button></a>
     
      </div>
  

@@ -8,7 +8,7 @@ import ProductHome from '../../NewComponent/ProductHome';
 const FixedNav = () => {
   return (
     <>
-      <div class="sticky top-0 z-50 bg-gray-50 cursor-pointer">
+      <div class="sticky top-0 z-50 bg-gray-50 ">
         <Navbar1/>
       <ProductHome/>
       <Navbar3 />

@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import Register from '../Registration/Register'
 import { Link } from 'react-router-dom';
 
-const Navbar3 = ({register, setRegister}) => {
+const Navbar3 = () => {
 
     const [search,setSearch] = useState(false)
   return (
@@ -14,15 +14,14 @@ const Navbar3 = ({register, setRegister}) => {
 <div className="  flex  justify-between mt-1 p-2 bg-[#1F51C6] text-white font-semibold font-1.1em text-center relative">
     <div className="sticky flex space-x-4 ml-5 p-1">
         <span className='text-black'>Home</span>   
-       <Link to='/all'> <span onClick='scroll-mt-px'>Products</span></Link>
-       <Link to='/gallary1'> <span onClick='scroll-mt-px'>Gallery</span></Link>
-       <Link to='/blognw'> <span onClick='scroll-mt-px'>Blogs</span></Link>
-        <Link to='/contactus'> <span onClick='scroll-mt-px'>Contacts</span></Link>
+       <a href='/all' target="_blank"> <span onClick='scroll-mt-px'>Products</span></a>
+       <a href='/gallary1' target="_blank"> <span onClick='scroll-mt-px' target="_blank">Gallery</span></a>
+       <a href='/blognw' target="_blank"> <span onClick='scroll-mt-px'>Blogs</span></a>
+        <a href='/contactus' target="_blank"> <span onClick='scroll-mt-px'>Contacts</span></a>
          </div>
 
          
         </div>
-        { register && <Register/>}
     </>
     
   )

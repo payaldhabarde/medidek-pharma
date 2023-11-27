@@ -4,7 +4,7 @@ const AboutPharma = () => {
   return (
     <>
       <div className='w-[1150px] ml-20 mt-24 bg-gray-50 '>
-        <h1 className='font-semibold  text-sm'>Pharmaceuticals LLP - Your One-Step Online Pharmacy.</h1>
+        <h1 className='font-semibold  text-md'>Pharmaceuticals LLP - Your One-Step Online Pharmacy.</h1>
         <p className='text-sm opacity-60 mt-6 '>Online pharmacies allow you to fill prescription medications from the comfort of your home using a pharmacy website or an app rather than having to fill them in person.An online pharmacy can also offer<br/> you more cost savings and convenience. We collected data on the products, costs, care, shipping times, insurance practices, and including some we tested ourselves, to create our list of top online<br/> pharmacies of 2023.</p>
         <div className='text-sm opacity-90 mt-5 ml-1'>
         <p>- More affordable prices for prescription and over-the-counter medications.</p>
